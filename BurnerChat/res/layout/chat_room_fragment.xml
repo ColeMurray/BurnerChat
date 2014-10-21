@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.burnerchat.chat.fragments.ui.MessageListView
+        android:id="@+id/chat_room_listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/chat_room_message_send_container" />
+
+    <RelativeLayout
+        android:id="@+id/chat_room_message_send_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/chat_room_message"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/chat_room_send"
+            android:gravity="left"
+            android:hint="@string/message"
+            android:inputType="textNoSuggestions" >
+
+        </com.beardedhen.androidbootstrap.BootstrapEditText>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/chat_room_send"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/send"
+            bootstrapbutton:bb_size="small"
+            bootstrapbutton:bb_type="danger" >
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

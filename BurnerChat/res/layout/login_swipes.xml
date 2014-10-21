@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/swipe_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".6"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="16dp"
+        android:src="@drawable/logo" />
+
+    <!--   <TextView
+        android:id="@+id/swipe_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Swipetext"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/Burner_text"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:gravity="center"
+         android:padding="16dp"
+         android:text="Burner Chat"
+         android:textColor="@color/white"
+         android:textSize="50sp"
+         android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/detail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/burner_text"
+        android:layout_below="@+id/burner_text"
+        android:layout_marginTop="170dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        
+        
+         />
+
+    <TextView
+        android:id="@+id/burner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

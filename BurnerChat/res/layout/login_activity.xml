@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix"
+            android:src="@drawable/burning_astronaut_dark" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/login_username" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/login_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/login_pager_indicator" />
+
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/login_pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#88CCCCCC"
+            app:selectedColor="#d9534f" />
+    </RelativeLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/login_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="0dp"
+        android:alpha=".8"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:inputType="textNoSuggestions" >
+    </com.beardedhen.androidbootstrap.BootstrapEditText>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="0dp"
+        android:alpha=".8"
+        android:text="@string/login"
+        bootstrapbutton:bb_type="danger"
+        bootstrapbutton:be_roundedCorners="false" >
+    </com.beardedhen.androidbootstrap.BootstrapButton>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/swipe_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".6"
+        android:scaleType="center"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="16dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Get Started"
+        android:textSize="50dp"
+        android:typeface="serif"
+        android:textStyle = "italic"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvBurnerUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvGetStarted"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="42dp"
+        android:text="Burner User"
+        android:textSize = "@dimen/header_font_size"
+        android:textStyle = "bold"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvBurnerUserDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvBurnerUser"
+        android:layout_below="@+id/tvBurnerUser"
+        android:layout_marginTop="@dimen/small_text_margin"
+        android:text="Pick a username. Anonymously chat with no traces. Burn after use."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize = "@dimen/detail_font_size"
+        android:textColor="@color/white"
+         />
+
+    <TextView
+        android:id="@+id/tvBurnChatroomHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvBurnerUser"
+        android:layout_below="@+id/tvBurnerUserDetails"
+        android:layout_marginTop="@dimen/small_text_margin"
+        android:text="Burner Chatroom"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/header_font_size"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBurnChatroomHeaderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvBurnerUser"
+        android:layout_below="@+id/tvBurnChatroomHeader"
+        android:layout_marginTop="@dimen/small_text_margin"
+        android:text="Choose the name of the chatroom along with a password you decide."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize = "@dimen/detail_font_size"
+        android:textColor="@color/white"
+         />
+
+</RelativeLayout>
